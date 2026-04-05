@@ -37,13 +37,13 @@ public class Main {
         System.out.print("Member ID : ");
         String id = scanner.nextLine();
         System.out.print("4-digit PIN: "); 
-        String pin = scanner.nextLine(); // [cite: 6]
+        String pin = scanner.nextLine(); 
 
         if (workspace.login(id, pin)) {
-            System.out.println("[!] Login Successful!"); // [cite: 9]
+            System.out.println("[!] Login Successful!"); 
             userDashboard();
         } else {
-            System.out.println("[!] Incorrect Credentials"); // [cite: 8]
+            System.out.println("[!] Incorrect Credentials"); 
         }
     }
 
@@ -56,7 +56,7 @@ public class Main {
         System.out.print("Member ID: ");
         String id = scanner.nextLine();
         System.out.print("Age: ");
-        int age = Integer.parseInt(scanner.nextLine()); // [cite: 15]
+        int age = Integer.parseInt(scanner.nextLine());
         System.out.print("Create a 4-digit PIN: ");
         String pin = scanner.nextLine();
         workspace.registerMember(name, age, id, pin);
@@ -93,7 +93,7 @@ public class Main {
         System.out.println("------------------------------------------------------------------");
         System.out.print("Confirm Booking? (Y/N): ");
         if (scanner.nextLine().equalsIgnoreCase("Y")) {
-            workspace.finalizeBooking(rid, hrs); // [cite: 29]
+            workspace.finalizeBooking(rid, hrs); 
         } else {
             System.out.println("[!] TRANSACTION CANCELLED");
         }
