@@ -70,7 +70,7 @@ public class WorkspaceManager {
     }
 
     public void registerMember(String name, int age, String user, String pass) {
-        if (age <= 18) {
+        if (age <= 17) {
             System.out.println("[!] Invalid age input.");
             return;
         }
