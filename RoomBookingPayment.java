@@ -6,5 +6,7 @@ public class RoomBookingPayment extends PaymentFramework {
                               boolean hasValidPaymentMethod, double creditBalance,
                               double discountRate) {
 
+        super(name, transactionID, amount, hasValidPaymentMethod, creditBalance, discountRate);
+        
     }
 }
