@@ -31,7 +31,7 @@ public class Member {
     
     public int getAge() { return age; }
 
-    public int getPin() { return pin; }    
+  
     
     
 }
