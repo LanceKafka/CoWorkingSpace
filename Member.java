@@ -33,4 +33,5 @@ public class Member {
 
     public int getPin() { return pin; }    
     
+    
 }
